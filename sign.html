@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .SignUp{
+           
+        }
+        .SignUp >div{
+          margin-top:10px;
+          margin-bottom:10px;
+        }
+        .SignUp >div>label{
+         
+        }
+        .SignUp >div input{
+          margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+  <form class="SignUp" action="/SignUp"  method="post" name="SignUp"><!--第一个点：action如何和js互动没有理解-->
+    <h5>注册</h5>
+  <div>
+    <label>邮箱<input type="text" name="email" placeholder="请输入您的邮箱"></label>
+    <span class="email"></span>    
+  </div> 
+  <div>
+    <label>密码<input type="password" name="password" placeholder="请输入您的密码"></label>
+    <span class="password"></span>  
+  </div>
+  <div>
+    <label>确认密码<input type="password" name="passwordp" placeholder="再次确认密码"></label>
+    <span class="passwordp"></span> 
+  </div>
+    <button id="signup" type="submit">注册</button>
+  </form>
+  <script src="./main.js"></script>
+  
+</body>
+</html>
