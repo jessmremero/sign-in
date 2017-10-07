@@ -30,9 +30,8 @@ $SignUpForm.on('submit',(e)=>{
   $.ajax({
     url:$SignUpForm.attr('action'),
     method:$SignUpForm.attr('method'),
-    data:string,
+    data:string,//你要传什么数据给到服务端//
     success:function(response){
-      
       let object = JSON.parse(response)
       
     }
